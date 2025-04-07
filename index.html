@@ -557,8 +557,31 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
-  
-<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-oce.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="5d7d9fdf-99dc-4d8a-bfef-e240be1c1300" data-lcw-version="prod" data-org-id="7114dc53-e50d-f011-b015-002248942ac9" data-org-url="https://m-7114dc53-e50d-f011-b015-002248942ac9.au.omnichannelengagementhub.com"></script>
+ <script>
+      function lcw() {
+        return {
+          styleProps: {
+            generalStyles: {},
+          },
+          webChatContainerProps: {
+            containerStyles: {
+              fontSize: 12,
+            },
+            webChatStyles: {
+              paddingWide: 10,
+              suggestedActionLayout: "flow",
+              suggestedActionBorderRadius: 6, // Slightly rounded corners for a modern look
+              suggestedActionHeight: 25, // Smaller button height
+              suggestedActionBorderColor: "#27a5e4", // Light gray border (more visible)
+              suggestedActionBorderStyle: "solid", // Solid border
+              suggestedActionBorderWidth: 1, // Thicker border for better visibility
+              suggestedActionTextColor: "#000000", // Black text for contrast
+            },
+          },
+        };
+      }
+</script> 
+<script v2 id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-oce.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="5d7d9fdf-99dc-4d8a-bfef-e240be1c1300" data-lcw-version="prod" data-org-id="7114dc53-e50d-f011-b015-002248942ac9" data-org-url="https://m-7114dc53-e50d-f011-b015-002248942ac9.au.omnichannelengagementhub.com" data-customization-callback="lcw"></script>
 
   <script type="text/javascript">
         window.addEventListener("lcw:ready", function handleLivechatReadyEvent() {
