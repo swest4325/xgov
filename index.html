@@ -560,6 +560,15 @@
   
 <script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-oce.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="5d7d9fdf-99dc-4d8a-bfef-e240be1c1300" data-lcw-version="prod" data-org-id="7114dc53-e50d-f011-b015-002248942ac9" data-org-url="https://m-7114dc53-e50d-f011-b015-002248942ac9.au.omnichannelengagementhub.com"></script>
 
+  <script type="text/javascript">
+        window.addEventListener("lcw:ready", function handleLivechatReadyEvent() {
+          Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(function contextProvider() {
+            return {
+              Email: { value: "claudiamazzanti@crmdemo.dynamics.com", isDisplayable: true },
+            };
+          });
+        });
+</script>
 </body>
 
 </html>
